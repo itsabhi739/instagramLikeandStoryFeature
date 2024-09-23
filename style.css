@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 330px;
+    border-radius: 10px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.stories{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid red;
+    padding: 10px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.story{
+    height: 75px;
+    width: 75px;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    border: 3px solid red;
+}
+
+.story img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+}
+.story .name{
+    font-size: x-small;
+    color: black;
+}
+.stories::-webkit-scrollbar{
+    display: none;
+}
+
+.fullscreen{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    /* background: url("https://imgs.search.brave.com/JhDYzZoF9Y1GAZ-yDtzFUXG94pLS9XXPzrjd77R3x2s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aXN0b2NrcGhvdG8u/Y29tL3Jlc291cmNl/cy9pbWFnZXMvUGhv/dG9GVExQLzEwNTg4/MzQ2MTYuanBn"); */
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+.nameContainer{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fullscreen i{
+    font-size: large;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+.picContainer{
+   width: 100%;
+   height: calc(100%-100px);
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.picture{
+    height: 300px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.label .part1{
+    display: flex;
+    align-items: center;
+    width: 85px;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.part1 .name{
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Roboto",sans-serif;
+    padding-left: 7px;
+}
+
+.label i{
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: bolder;
+    transform: rotate(90deg);
+}
+
+.label img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+.activity{
+    width: 100%;
+    height:50px;
+    background-color: rgb(255, 255, 255); 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activity i{
+    font-size: 29px;
+    font-weight: normal;
+}
+.activity .prt1{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 40%;
+    margin-left: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.chotaheart{
+    color:black;
+    font-size: 30px;
+    transition: 0.7s all ease-in-out;
+}
+
+.hiddenheart{
+    color:red;
+    font-size: 30px;
+    position: absolute;
+    top: 80%;
+    left:40.5%;
+    opacity: 0%;
+    transition: 0.3s all ease-in-out;
+}
+
+.comment{
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+  
+}
+
+.share{
+    height: 25px;
+    width: 25px;
+}
+
+.badaheart{
+
+    font-size: 70px;
+    color: white;
+    position: absolute;
+    top:57%;
+    left: 50%;
+    transform: translate(-50% ,-50%) scale(0);
+    opacity: 0%;
+    transition: all 0.5s ease-in-out;
+}
